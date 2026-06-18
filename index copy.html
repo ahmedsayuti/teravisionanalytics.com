@@ -3,7 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TeraVision Analytics — AI Geospatial Intelligence Platform</title>
+  <title>TerraVision Analytics</title>
+
+    <!-- Social media meta tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="TerraVision Analytics" />
+    <meta property="og:title" content="TerraVision Analytics" />
+    <meta property="og:description" content="TerraVision Analytics fuses satellite imagery, drone telemetry, IoT sensors, and AI into a single edge‑native platform — delivering real‑time geospatial intelligence across millions of agricultural acres for USDA, agribusinesses, and food‑security agencies." />
+    <meta property="og:url" content="https://www.terravisionanalytics.com" />
+    <meta property="og:image" content="https://www.terravisionanalytics.com/assets/linkimage.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Satellite and drone imagery overlaid with AI analytics on farmland" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="TerraVision Analytics." />
+    <meta name="twitter:description" content="TerraVision Analytics fuses satellite imagery, drone telemetry, IoT sensors, and AI into a single edge‑native platform — delivering real‑time geospatial intelligence across millions of agricultural acres for USDA, agribusinesses, and food‑security agencies." />
+    <meta name="twitter:image" content="https://www.terravisionanalytics.com/assets/linkimage.png" />
+    <meta name="twitter:image:alt" content="Satellite and drone imagery overlaid with AI analytics on farmland" /> 
+
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='none' stroke='%234bcfe0' stroke-width='6'/><path d='M50 10 L90 50 L50 90 L10 50 Z' fill='none' stroke='%2380fbbe' stroke-width='4'/><circle cx='50' cy='50' r='8' fill='%234bcfe0'/></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -799,6 +817,15 @@
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.1ms !important; }
     }
+
+    /* Active menu item – permanent underline */
+    .nav-links a.active {
+    color: var(--text-hi);
+    }
+
+    .nav-links a.active::after {
+    width: 100%;
+    }
   </style>
 </head>
 
@@ -808,7 +835,7 @@
 <nav id="main-nav">
   <div class="container">
     <div class="nav-inner">
-      <a href="#" class="logo" aria-label="TeraVision Analytics home">
+      <a href="/" class="logo" aria-label="TerraVision Analytics home">
         <span class="logo-mark">
           <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
@@ -824,19 +851,19 @@
             <circle cx="22" cy="22" r="9" stroke="url(#lg1)" stroke-width="1" opacity="0.35"/>
           </svg>
         </span>
-        <span class="logo-wordmark">TeraVision <span class="analytics">Analytics</span></span>
+        <span class="logo-wordmark">TerraVision <span class="analytics">Analytics</span></span>
       </a>
 
       <div class="nav-right-group">
         <ul class="nav-links" id="navLinks">
-          <li><a href="#platform">Platform</a></li>
-          <li><a href="#capabilities">Capabilities</a></li>
-          <li><a href="#use-cases">Use Cases</a></li>
-          <li><a href="#data-gallery">Data Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="/about/">Who we are</a></li>
+          <li><a href="/platform/">Platform</a></li>
+          <li><a href="/news/">News</a></li>
+          <li><a href="/contact/">Contact</a></li>
         </ul>
-        <a href="#" class="btn btn-ghost" id="navLogin">Log In</a>
-        <a href="#contact" class="btn btn-primary">Request Demo</a>
+        <a href="/log-in/" class="btn btn-ghost" id="navLogin">Log In</a>
+        <a href="/contact/" class="btn btn-primary">Request Demo</a>
         <button class="menu-btn" id="menuBtn" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
       </div>
     </div>
@@ -845,14 +872,14 @@
 
 <!-- Mobile Menu -->
 <nav class="mobile-menu" id="mobileMenu">
-  <a href="#platform" class="mobile-link">Platform</a>
-  <a href="#capabilities" class="mobile-link">Capabilities</a>
-  <a href="#use-cases" class="mobile-link">Use Cases</a>
-  <a href="#data-gallery" class="mobile-link">Data Gallery</a>
-  <a href="#contact" class="mobile-link">Contact</a>
+  <a href="/" class="mobile-link">Home</a>
+  <a href="/about/" class="mobile-link">Who we are</a>
+  <a href="/platform/" class="mobile-link">Platform</a>
+  <a href="/news/" class="mobile-link">News</a>
+  <a href="/contact/" class="mobile-link">Contact</a>
   <div style="margin-top:24px;display:flex;flex-direction:column;gap:12px;">
-    <a href="#" class="btn btn-ghost mobile-link" style="justify-content:center;">Log In</a>
-    <a href="#contact" class="btn btn-primary mobile-link" style="justify-content:center;">Request Demo</a>
+    <a href="/login/" class="btn btn-ghost mobile-link" style="justify-content:center;">Log In</a>
+    <a href="/contact/" class="btn btn-primary mobile-link" style="justify-content:center;">Request Demo</a>
   </div>
 </nav>
 
@@ -864,7 +891,7 @@
       <div class="hero-left">
         <div class="hero-badge"><span class="dot"></span> Live Geospatial Intelligence</div>
         <h1>See Every Acre.<br><em>Know Every Risk.</em><br>Act Before It's Too Late.</h1>
-        <p class="hero-desc">TeraVision Analytics fuses satellite imagery, drone telemetry, IoT sensors, and AI into a single edge-native platform — delivering real-time geospatial intelligence across millions of agricultural acres for USDA, agribusinesses, and food-security agencies.</p>
+        <p class="hero-desc">TerraVision Analytics fuses satellite imagery, drone telemetry, IoT sensors, and AI into a single edge-native platform — delivering real-time geospatial intelligence across millions of agricultural acres for USDA, agribusinesses, and food-security agencies.</p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary"><i class="fas fa-satellite-dish"></i> Book a Live Demo</a>
           <a href="#capabilities" class="btn btn-ghost"><i class="fas fa-play-circle"></i> Explore Platform</a>
@@ -923,7 +950,7 @@
 <section class="imagery-section" id="data-gallery">
   <div class="imagery-grid">
     <div class="imagery-panel">
-      <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Aerial satellite view of agricultural land" loading="lazy" />
+      <img src="https://images.unsplash.com/photo-1778056949472-faa6f4325a37?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Aerial satellite view of agricultural land" loading="lazy" />
       <div class="imagery-panel-overlay">
         <div class="imagery-panel-tag">// Satellite Multispectral Composite</div>
         <h3>Field-Level Intelligence at Continental Scale</h3>
@@ -932,7 +959,7 @@
     </div>
     <div class="imagery-right">
       <div class="imagery-panel">
-        <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Drone imagery over precision agriculture field" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1708589413325-f41ce2a0a9a3?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Drone imagery over precision agriculture field" loading="lazy" />
         <div class="imagery-panel-overlay">
           <div class="imagery-panel-tag">// UAV Drone Survey Pass</div>
           <h3>Drone-Based Canopy Diagnostics</h3>
@@ -940,7 +967,7 @@
         </div>
       </div>
       <div class="imagery-panel">
-        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="IoT sensor network deployed in crop rows" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1662661864791-8f7bf9e5e5fa?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="IoT sensor network deployed in crop rows" loading="lazy" />
         <div class="imagery-panel-overlay">
           <div class="imagery-panel-tag">// Edge IoT Node Network</div>
           <h3>In-Field IoT Sensor Mesh</h3>
@@ -957,7 +984,7 @@
     <div class="text-center">
       <span class="eyebrow"><i class="fas fa-atom"></i> Core Capabilities</span>
       <h2 class="s-title reveal">AI Meets the Earth's Surface — at <span class="grad-text">Every Scale</span></h2>
-      <p class="s-sub mx-auto reveal reveal-delay-1">Six integrated capability pillars power the TeraVision Analytics platform — from raw sensor data to decision-ready intelligence products.</p>
+      <p class="s-sub mx-auto reveal reveal-delay-1">Six integrated capability pillars power the TerraVision Analytics platform — from raw sensor data to decision-ready intelligence products.</p>
     </div>
     <div class="cap-grid">
       <div class="cap-card reveal reveal-delay-1"><div class="cap-icon"><i class="fas fa-satellite"></i></div><h3>Multispectral Earth Observation</h3><p>Fuse Sentinel-2, Landsat-9, PlanetScope, and private SAR archives into time-series composites. Near-daily revisit cycles for any landmass at 3–10 m resolution.</p><a href="#" class="cap-learn">Learn more <i class="fas fa-arrow-right"></i></a></div>
@@ -1018,7 +1045,7 @@
     <div class="text-center">
       <span class="eyebrow"><i class="fas fa-rocket"></i> Use Cases</span>
       <h2 class="s-title reveal">Intelligence for <span class="grad-text">Every Agricultural Decision</span></h2>
-      <p class="s-sub mx-auto reveal reveal-delay-1">From the farm gate to the policy table, TeraVision Analytics delivers data-driven insights that change what's possible.</p>
+      <p class="s-sub mx-auto reveal reveal-delay-1">From the farm gate to the policy table, TerraVision Analytics delivers data-driven insights that change what's possible.</p>
     </div>
     <div class="usecase-grid">
       <div class="uc-card reveal reveal-delay-1"><div class="uc-icon"><i class="fas fa-leaf"></i></div><h4>Crop Health Monitoring</h4><p>Continuous NDVI, chlorophyll index, and canopy-temperature analysis detects stress, disease, and nutrient deficiencies 10–14 days before visible symptoms emerge.</p><span class="uc-metric">↑ 23% earlier intervention</span></div>
@@ -1039,10 +1066,10 @@
       <h2 class="s-title reveal">Real Data. <span class="grad-text">Real Terrain.</span></h2>
     </div>
     <div class="field-gallery">
-      <div class="gallery-item reveal reveal-delay-1"><img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=75" alt="Irrigated crop circles from above" loading="lazy" /><div class="gallery-item-overlay"><span class="gallery-item-label">// Center-Pivot Irrigation</span></div></div>
-      <div class="gallery-item reveal reveal-delay-2"><img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=75" alt="Agricultural drone flight over wheat" loading="lazy" /><div class="gallery-item-overlay"><span class="gallery-item-label">// UAV Wheat Survey</span></div></div>
-      <div class="gallery-item reveal reveal-delay-3"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=75" alt="Soil sensor array in crop field" loading="lazy" /><div class="gallery-item-overlay"><span class="gallery-item-label">// In-Field Sensor Array</span></div></div>
-      <div class="gallery-item reveal reveal-delay-4"><img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=75" alt="GIS mapping of farmland parcels" loading="lazy" /><div class="gallery-item-overlay"><span class="gallery-item-label">// GIS Parcel Mapping</span></div></div>
+      <div class="gallery-item reveal reveal-delay-1"><img src="https://images.unsplash.com/photo-1692369584496-3216a88f94c1?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Irrigated crop circles from above" loading="lazy" /><div class="gallery-item-overlay"><span class="gallery-item-label">// Center-Pivot Irrigation</span></div></div>
+      <div class="gallery-item reveal reveal-delay-2"><img src="https://images.unsplash.com/photo-1657093114835-031e7cf9520c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Agricultural drone flight over wheat" loading="lazy" /><div class="gallery-item-overlay"><span class="gallery-item-label">// UAV Wheat Survey</span></div></div>
+      <div class="gallery-item reveal reveal-delay-3"><img src="https://images.unsplash.com/photo-1755931359594-852c73c6609c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Soil sensor array in crop field" loading="lazy" /><div class="gallery-item-overlay"><span class="gallery-item-label">// In-Field Sensor Array</span></div></div>
+      <div class="gallery-item reveal reveal-delay-4"><img src="https://images.unsplash.com/photo-1547336863-6491b008052b?q=80&w=1360&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="GIS mapping of farmland parcels" loading="lazy" /><div class="gallery-item-overlay"><span class="gallery-item-label">// GIS Parcel Mapping</span></div></div>
     </div>
   </div>
 </section>
@@ -1057,7 +1084,7 @@
     <div class="testi-grid">
       <div class="testi-card reveal reveal-delay-1">
         <div class="testi-stars">★★★★★</div>
-        <p class="testi-quote">"TeraVision's edge architecture gives us the ability to monitor millions of acres in near-real time. The drought-risk scores and disease alerts have transformed how we allocate resources."</p>
+        <p class="testi-quote">"TerraVision's edge architecture gives us the ability to monitor millions of acres in near-real time. The drought-risk scores and disease alerts have transformed how we allocate resources."</p>
         <div class="testi-author"><div class="testi-avatar">DR</div><div><div class="testi-name">Dr. Elena Reyes</div><div class="testi-role">Director, Geospatial Analytics · USDA NASS</div></div></div>
       </div>
       <div class="testi-card reveal reveal-delay-2">
@@ -1067,7 +1094,7 @@
       </div>
       <div class="testi-card reveal reveal-delay-3">
         <div class="testi-stars">★★★★★</div>
-        <p class="testi-quote">"We integrated TeraVision's REST API in two weeks. Their PostGIS data model is clean, the GraphQL layer is responsive, and the Kafka streams feed directly into our own BI stack."</p>
+        <p class="testi-quote">"We integrated TerraVision's REST API in two weeks. Their PostGIS data model is clean, the GraphQL layer is responsive, and the Kafka streams feed directly into our own BI stack."</p>
         <div class="testi-author"><div class="testi-avatar">SK</div><div><div class="testi-name">Sara Kim</div><div class="testi-role">Chief Data Officer · Pioneer Hi-Bred</div></div></div>
       </div>
     </div>
@@ -1106,7 +1133,7 @@
               <circle cx="22" cy="22" r="2" fill="#060b12"/>
             </svg>
           </span>
-          <span class="logo-wordmark" style="font-size:1.1rem;">TeraVision <span class="analytics">Analytics</span></span>
+          <span class="logo-wordmark" style="font-size:1.1rem;">TerraVision <span class="analytics">Analytics</span></span>
         </a>
         <p>AI-driven geospatial intelligence for national-scale agriculture. Edge-native, cloud-synchronized, decision-ready.</p>
       </div>
@@ -1124,7 +1151,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 TeraVision Analytics, LLC. All rights reserved. &nbsp;·&nbsp; Privacy Policy &nbsp;·&nbsp; Terms of Service</p>
+      <p>© 2026 TerraVision Analytics, LLC. All rights reserved. &nbsp;·&nbsp; Privacy Policy &nbsp;·&nbsp; Terms of Service</p>
       <div class="footer-social">
         <a href="#" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
